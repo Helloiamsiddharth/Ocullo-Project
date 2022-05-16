@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&&family=Kaushan+Script&family=Lato&family=Rock+Salt&display=swap"&family=Josefin+Sans&family=Roboto&family=Montserrat:wght@500&display=swap');
+@font-face {
+    font-family: 'samarkan_____normal';
+    src: url('../fonts/samarkannormal-gg5d-webfont.woff2') format('woff2'),
+         url('../fonts/samarkannormal-gg5d-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F7FDDD;
+    font-family: 'Monsterrat';
+    font-size: 20px;;
+}
+/* Links */
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    font-size: 16px;
+    z-index: 999;
+}
+img {
+    margin: 5px 0px;
+    padding: 0;
+    margin-left: 4.5%;
+    margin-right: 40%;
+}
+header .links {
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto';
+    padding-top: 15px;
+}
+nav .main-links {
+    opacity: 1;
+    position: relative;
+}
+nav .main-links::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #39392d;
+    position: absolute;
+    top: -.35em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform ease-in-out 350ms;
+}
+nav .main-links::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #39392d;
+    position: absolute;
+    bottom: -.35em;
+    left: 0px;
+    right: 0;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform ease-in-out 350ms;
+}
+nav .main-links:hover::before {
+    transform: scale(1, 1);
+}
+nav .main-links:hover::after {
+    transform: scale(1, 1);
+}
+header .links a {
+    margin: 0 30px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #837241;
+}
+.scrolling-active {
+    background-color: #Fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    opacity: 1;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F79F79;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content .dropdown-links {
+    color: #fff;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Josefin sans', 'sans-serif';
+}
+.dropdown-content a:hover {background-color: #F79F79; opacity: 0.5;}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+/* HomePage */
+.home-content-wrapper {
+    padding: 50px 80px;
+    padding-bottom: 0%;
+}
+.home-content{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    background: url(../images/budddha.jpg);
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: cover;
+    height: 800px;      
+}
+.home-content h1 {
+    margin-top: 200px;
+    padding: 10px;
+    flex: 50%;
+    font-family: 'samarkan';
+    color: #F4E87C;
+    font-size: 5em;
+}
+.home-content h2 {
+    padding: 10px;
+    flex: 50%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.scrolling-active {
+    background-color: #Fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    opacity: 1;
+}
+
+.country1 {
+    margin: 0;
+    padding: 0;
+}
+.country1 h1, .country2 h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 60px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item-left {
+    flex: 50%;
+}
+.item-right {
+    flex: 50%;
+}
+.country_description img {
+    margin: 5%;
+    padding: 0 5%;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    max-width: 80%;
+    max-height: 80%;
+}
+.description1 p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin: 2%;
+}
+.map {
+    margin: 0 30%;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-1 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-1 img {
+    width: 100%;
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+.col-1 p {
+    font-size: 14px;
+}
+/* .col-1:hover {
+    transform: translateY(-5px);
+} */
+.col-1 img:hover {
+    transform: translateY(-7px);
+    transition: 0.5s ease;
+}
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover {
+    filter: grayscale(0%);
+}
+
+
+.footer {
+    background: #000;
+    color: #F79F79;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    font-family: 'poppins', sans-serif;
+    line-height: 30px;
+}
+.footer p {
+    color:#F79F79;
+    font-family: 'poppins', sans-serif;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'poppins', sans-serif;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1 {
+    flex-basis: 30%;
+}
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img {
+    width: 140px;
+    margin-bottom: 20px;
+    margin-left: 35%;
+}
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright {
+    text-align: center;
+}
